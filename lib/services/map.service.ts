@@ -9,8 +9,8 @@ export class MapService {
   constructor() {
     this.httpService = new HttpService();
     if (process.env.NEXT_PUBLIC_API_URL) {
-      this.zoneUrl = '/zone';
-      this.pixelUrl = '/pixel';
+      this.zoneUrl = 'https://climate-fisheries-backend.vercel.app/zone';
+      this.pixelUrl = 'https://climate-fisheries-backend.vercel.app/pixel';
     }
   }
 

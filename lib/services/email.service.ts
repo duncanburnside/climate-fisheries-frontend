@@ -6,6 +6,9 @@ export class EmailService {
 
   constructor() {
     this.httpService = new HttpService();
+    if (process.env.NEXT_PUBLIC_API_URL) {
+      this.emailUrl = 'https://climate-fisheries-backend.vercel.app/email';
+    }
   }
 
   async sendEmail(
