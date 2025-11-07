@@ -2,13 +2,19 @@ import { HttpService } from './http.service';
 import { MapTypes } from '../models/MapTypes';
 
 export class MapService {
-  private zoneUrl = '/api/zone';
-  private pixelUrl = '/api/pixel';
+  private zoneUrl: string;
+  private pixelUrl: string;
   private httpService: HttpService;
 
   constructor() {
     this.httpService = new HttpService();
-    if (process.env.NEXT_PUBLIC_API_URL) {
+    // Default to deployed backend, use local API routes only if explicitly configured
+    const useLocalApi = process.env.NEXT_PUBLIC_USE_LOCAL_API === 'true';
+    if (useLocalApi) {
+      this.zoneUrl = '/api/zone';
+      this.pixelUrl = '/api/pixel';
+    } else {
+      // Use deployed backend by default
       this.zoneUrl = 'https://climate-fisheries-backend.vercel.app/zone';
       this.pixelUrl = 'https://climate-fisheries-backend.vercel.app/pixel';
     }

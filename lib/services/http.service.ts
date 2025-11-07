@@ -65,20 +65,20 @@ export class HttpService {
         }
       }
       
-      // Only log API errors if they're not network failures (e.g., uBlock Origin blocking)
-      // Network errors are expected and handled gracefully by calling code
-      if (error.code !== 'ERR_NETWORK' && error.code !== 'ECONNREFUSED' && error.code !== 'ETIMEDOUT') {
-        // Log detailed error information for debugging (only for non-network errors)
-        console.error('API Request Error:', {
-          url: apiUrlForError,
-          code: error.code,
-          message: error.message,
-          status: error.response?.status,
-          response: error.response?.data,
-          config: error.config,
-          stack: error.stack
-        });
-      }
+      // Log all errors for debugging, but handle network errors gracefully
+      const isNetworkError = error.code === 'ERR_NETWORK' || error.code === 'ECONNREFUSED' || error.code === 'ETIMEDOUT';
+      
+      // Log detailed error information for debugging
+      console.error('API Request Error:', {
+        url: apiUrlForError,
+        code: error.code || 'UNKNOWN',
+        message: error.message || 'Unknown error',
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        response: error.response?.data,
+        isNetworkError,
+        fullError: error
+      });
       
       // Throw error so calling code can handle gracefully
       throw error;

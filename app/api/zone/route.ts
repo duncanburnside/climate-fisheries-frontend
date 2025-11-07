@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readFile } from 'fs/promises';
+import { readFile, access } from 'fs/promises';
 import { join } from 'path';
+import { constants } from 'fs';
 
 // Helper to get data directory path
-function getDataDir(): string {
+async function getDataDir(): Promise<string> {
   // Check for environment variable first (for Vercel or custom deployments)
   if (process.env.DATA_DIR) {
     return process.env.DATA_DIR;
@@ -12,18 +13,29 @@ function getDataDir(): string {
   const projectRoot = process.cwd();
   
   // Try multiple possible locations:
-  // 1. Backend directory (development)
+  // 1. Backend directory (development) - correct path for this project
   // 2. Data directory in project root
   // 3. Data directory in frontend (if copied)
   const possiblePaths = [
+    join(projectRoot, '..', 'climate-fisheries-backend', 'Data'),
     join(projectRoot, '..', 'backend', 'Data'),
     join(projectRoot, '..', 'Data'),
     join(projectRoot, 'data'),
     join(projectRoot, 'public', 'data'),
   ];
   
-  // Return the first path (we'll check if file exists when reading)
-  // In Vercel, you'll need to set DATA_DIR env var or copy data files
+  // Try to find the first path that exists
+  for (const path of possiblePaths) {
+    try {
+      await access(path, constants.F_OK);
+      return path;
+    } catch {
+      // Path doesn't exist, try next one
+      continue;
+    }
+  }
+  
+  // Return the first path as fallback (will fail with proper error message)
   return possiblePaths[0];
 }
 
@@ -52,7 +64,7 @@ export async function GET(request: NextRequest) {
     const mappedIndicator = indicatorMapping[indicator] || indicator;
 
     // Build file path
-    const dataDir = getDataDir();
+    const dataDir = await getDataDir();
     const filename = join(dataDir, 'MODEL', model, mappedIndicator, climate, `${zoneId}.json`);
 
     try {

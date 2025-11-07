@@ -1,12 +1,17 @@
 import { HttpService } from './http.service';
 
 export class EmailService {
-  private emailUrl = '/api/email';
+  private emailUrl: string;
   private httpService: HttpService;
 
   constructor() {
     this.httpService = new HttpService();
-    if (process.env.NEXT_PUBLIC_API_URL) {
+    // Default to deployed backend, use local API routes only if explicitly configured
+    const useLocalApi = process.env.NEXT_PUBLIC_USE_LOCAL_API === 'true';
+    if (useLocalApi) {
+      this.emailUrl = '/api/email';
+    } else {
+      // Use deployed backend by default
       this.emailUrl = 'https://climate-fisheries-backend.vercel.app/email';
     }
   }

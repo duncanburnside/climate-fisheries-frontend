@@ -1,21 +1,35 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readFile } from 'fs/promises';
+import { readFile, access } from 'fs/promises';
 import { join } from 'path';
+import { constants } from 'fs';
 
 // Helper to get data directory path
-function getDataDir(): string {
+async function getDataDir(): Promise<string> {
   if (process.env.DATA_DIR) {
     return process.env.DATA_DIR;
   }
   
   const projectRoot = process.cwd();
   const possiblePaths = [
+    join(projectRoot, '..', 'climate-fisheries-backend', 'Data'),
     join(projectRoot, '..', 'backend', 'Data'),
     join(projectRoot, '..', 'Data'),
     join(projectRoot, 'data'),
     join(projectRoot, 'public', 'data'),
   ];
   
+  // Try to find the first path that exists
+  for (const path of possiblePaths) {
+    try {
+      await access(path, constants.F_OK);
+      return path;
+    } catch {
+      // Path doesn't exist, try next one
+      continue;
+    }
+  }
+  
+  // Return the first path as fallback (will fail with proper error message)
   return possiblePaths[0];
 }
 
@@ -42,7 +56,7 @@ export async function GET(request: NextRequest) {
     const mappedIndicator = indicatorMapping[indicator] || indicator;
 
     // Build file path
-    const dataDir = getDataDir();
+    const dataDir = await getDataDir();
     const filename = join(dataDir, 'PIXEL', mappedIndicator, climate, `${period}.json`);
 
     try {
