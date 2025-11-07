@@ -63,12 +63,7 @@ export default function Footer({
         climateIndicator={climateIndicator}
         climateStressors={climateStressors}
         climateRisks={climateRisks}
-        showStressorDropdown={showStressorDropdown}
-        showRiskDropdown={showRiskDropdown}
-        onStressorDropdownToggle={onStressorDropdownToggle}
-        onRiskDropdownToggle={onRiskDropdownToggle}
         onClimateIndicatorChange={onClimateIndicatorChange}
-        onClimateInfoIconClick={onClimateInfoIconClick}
         methodId={methodId}
       />
     </footer>
