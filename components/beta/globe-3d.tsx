@@ -32,7 +32,7 @@ export function Globe3D({ indicator, climateScenario, periodScenario, showPoints
         setLoadingStatus('Initializing globe...');
 
         // Initialize globe
-        const globe = Globe()(globeEl.current)
+        const globe = new Globe(globeEl.current)
           .globeImageUrl('//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
           .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
           .showAtmosphere(true)
@@ -40,7 +40,7 @@ export function Globe3D({ indicator, climateScenario, periodScenario, showPoints
           .atmosphereAltitude(0.15)
           .pointOfView({ lat: 0, lng: 0, altitude: 2.5 }, 0)
           .enablePointerInteraction(true)
-          .polygonsTransitionDuration(0); // Disable transitions for immediate rendering
+          .polygonsTransitionDuration(0);
 
         globeRef.current = globe;
 
