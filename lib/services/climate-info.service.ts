@@ -14,61 +14,79 @@ export class ClimateInfoService {
       id: 'sea-surface-temp',
       name: 'SST',
       label: 'Warming (sea surface)',
-      explanation: `Changes in the average temperature of the surface layer of the ocean relative to the average of 1951-2000 level.`,
+      explanation: `Changes in average temperature of surface layer of ocean relative to average of 1951-2000 level.`,
       dataPlaceholder: 11,
       colors: this.colors.blRd,
       methodId: 'method1-climate-stressors',
       yearsRange: [1950, 2100],
       display: true,
-      units: `&#176; C`
+      units: `&#176; C`,
+      type: 'stressor' as const
     },
     {
       id: 'sea-bottom-temp',
       name: 'SBOT',
       label: 'Warming (sea bottom)',
-      explanation: `Average temperature of the bottom layer of the ocean relative to the average of 1951-2000 level.`,
+      explanation: `Average temperature of bottom layer of ocean relative to average of 1951-2000 level.`,
       dataPlaceholder: 22,
       colors: this.colors.blRd,
       methodId: 'method1-climate-stressors',
       yearsRange: [1950, 2100],
       display: true,
-      units: `&#176; C`
+      units: `&#176; C`,
+      type: 'stressor' as const
     },
     {
       id: 'deoxygenation',
       name: 'OXY',
       label: 'Oxygen',
-      explanation: `Percentage change in oxygen concentration in the upper 200m of the ocean relative to the average of 1951-2000 level.`,
+      explanation: `Percentage change in oxygen concentration in upper 200m of ocean relative to average of 1951-2000 level.`,
       dataPlaceholder: 33,
       colors: this.colors.brOr,
       methodId: 'method1-climate-stressors',
       yearsRange: [1950, 2100],
       display: true,
-      units: '%'
+      units: '%',
+      type: 'stressor' as const
     },
     {
       id: 'acidification',
       name: 'PH',
-      label: 'pH',
-      explanation: `Percentage change in pH (a measure of ocean acidity) in the surface layer of the ocean relative to the average of 1951-2000 level.`,
+      label: 'Acidification',
+      explanation: `Change in pH of ocean surface water relative to average of 1951-2000 level.`,
       dataPlaceholder: 44,
       colors: this.colors.puOr,
       methodId: 'method1-climate-stressors',
       yearsRange: [1950, 2100],
       display: true,
-      units: '%'
+      units: 'pH',
+      type: 'stressor' as const
     },
     {
-      id: 'primary-production',
+      id: 'primary-productivity',
       name: 'NPP',
-      label: 'Net primary production',
-      explanation: `Percentage change in net primary production in the upper 200m of the ocean relative to the average of 1951-2000 level.`,
+      label: 'Primary productivity',
+      explanation: `Net primary productivity is the amount of organic carbon produced by phytoplankton through photosynthesis minus what is respired by them.`,
       dataPlaceholder: 55,
       colors: this.colors.rdGn,
       methodId: 'method1-climate-stressors',
-      yearsRange: [1950, 2099],
+      yearsRange: [1950, 2100],
       display: true,
-      units: `%`
+      units: 'mg C m<sup>-2</sup> d<sup>-1</sup>',
+      type: 'stressor' as const
+    },
+    {
+      id: 'species-shift',
+      name: 'SPP',
+      label: 'Species shift',
+      explanation: `Percentage change in the maximum catch potential of all exploited species relative to average of 1951-2000 level.`,
+      dataPlaceholder: 66,
+      colors: this.colors.rd,
+      methodId: 'method1-climate-stressors',
+      yearsRange: [1950, 2100],
+      display: true,
+      units: '%',
+      type: 'stressor' as const
     }
   ];
 
@@ -83,7 +101,8 @@ export class ClimateInfoService {
       methodId: 'method4-species-turnover',
       yearsRange: [1951, 2099],
       display: true,
-      units: '%'
+      units: '%',
+      type: 'risk' as const
     },
     {
       id: 'multi-stress-index-surface',
@@ -96,7 +115,8 @@ export class ClimateInfoService {
       methodId: 'method2-multi-stressor-exposure-index',
       yearsRange: [1980, 2099],
       display: true,
-      units: '%'
+      units: '%',
+      type: 'risk' as const
     },
     {
       id: 'max-catch-potential',
@@ -108,7 +128,8 @@ export class ClimateInfoService {
       methodId: 'method3-maximum-catch-potential',
       yearsRange: [1950, 2099],
       display: true,
-      units: 'x 1000 tonnes'
+      units: 'x 1000 tonnes',
+      type: 'risk' as const
     },
     {
       id: 'revenue',
@@ -119,7 +140,8 @@ export class ClimateInfoService {
       colors: this.colors.rd,
       methodId: 'method5-maximum-potential-revenue',
       display: false,
-      units: '%'
+      units: '%',
+      type: 'risk' as const
     }
   ];
 

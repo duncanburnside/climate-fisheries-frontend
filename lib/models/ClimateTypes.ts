@@ -10,6 +10,7 @@ export interface ClimateIndicator {
   display: boolean;
   units: string;
   aboutLabel?: string;
+  type: 'stressor' | 'risk';
 }
 
 export interface ClimateScenario {
