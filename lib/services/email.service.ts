@@ -6,9 +6,15 @@ export class EmailService {
 
   constructor() {
     this.httpService = new HttpService();
-    // Default to deployed backend, use local API routes only if explicitly configured
+    // Check for custom API URL (for local development)
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL;
     const useLocalApi = process.env.NEXT_PUBLIC_USE_LOCAL_API === 'true';
-    if (useLocalApi) {
+    
+    if (apiUrl) {
+      // Use custom API URL (e.g., http://localhost:5000)
+      this.emailUrl = `${apiUrl}/email`;
+    } else if (useLocalApi) {
+      // Use Next.js API routes
       this.emailUrl = '/api/email';
     } else {
       // Use deployed backend by default
