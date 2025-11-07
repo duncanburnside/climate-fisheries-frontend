@@ -1,0 +1,987 @@
+{
+  "map_type": "LME",
+  "total_zones": 66,
+  "zones": {
+    "64": {
+      "id": "64",
+      "name": "Arctic Ocean",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "65": {
+      "id": "65",
+      "name": "Arctic Archipelago",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "59": {
+      "id": "59",
+      "name": "Greenland Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "20": {
+      "id": "20",
+      "name": "Barents Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "58": {
+      "id": "58",
+      "name": "Kara Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "66": {
+      "id": "66",
+      "name": "Baffin Bay/Davis Straight",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "56": {
+      "id": "56",
+      "name": "East Siberian Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "57": {
+      "id": "57",
+      "name": "Laptev Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "54": {
+      "id": "54",
+      "name": "Chukchi Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "55": {
+      "id": "55",
+      "name": "Beaufort Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "18": {
+      "id": "18",
+      "name": "West Greenland Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "21": {
+      "id": "21",
+      "name": "Norwegian Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "19": {
+      "id": "19",
+      "name": "Iceland Shelf/Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "63": {
+      "id": "63",
+      "name": "Hudson Bay",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "23": {
+      "id": "23",
+      "name": "Baltic Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "53": {
+      "id": "53",
+      "name": "West Bering Sea",
+      "has_data": false,
+      "indicators": []
+    },
+    "60": {
+      "id": "60",
+      "name": "Faroe Plateau",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "52": {
+      "id": "52",
+      "name": "Okhotsk Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "22": {
+      "id": "22",
+      "name": "North Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "2": {
+      "id": "2",
+      "name": "Gulf of Alaska",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "24": {
+      "id": "24",
+      "name": "Celtic-Biscay Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "9": {
+      "id": "9",
+      "name": "Newfoundland-Labrador Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "50": {
+      "id": "50",
+      "name": "Sea of Japan/East Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "8": {
+      "id": "8",
+      "name": "Scotian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "51": {
+      "id": "51",
+      "name": "Oyashio Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "3": {
+      "id": "3",
+      "name": "California Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "62": {
+      "id": "62",
+      "name": "Black Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "7": {
+      "id": "7",
+      "name": "Northeast U.S. Continental Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "26": {
+      "id": "26",
+      "name": "Mediterranean Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "25": {
+      "id": "25",
+      "name": "Iberian Coastal",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "49": {
+      "id": "49",
+      "name": "Kuroshio Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "48": {
+      "id": "48",
+      "name": "Yellow Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "27": {
+      "id": "27",
+      "name": "Canary Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "47": {
+      "id": "47",
+      "name": "East China Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "6": {
+      "id": "6",
+      "name": "Southeast U.S. Continental Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "4": {
+      "id": "4",
+      "name": "Gulf of California",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "5": {
+      "id": "5",
+      "name": "Gulf of Mexico",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "32": {
+      "id": "32",
+      "name": "Arabian Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "33": {
+      "id": "33",
+      "name": "Red Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "10": {
+      "id": "10",
+      "name": "Insular Pacific-Hawaiian",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "12": {
+      "id": "12",
+      "name": "Caribbean Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "36": {
+      "id": "36",
+      "name": "South China Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "34": {
+      "id": "34",
+      "name": "Bay of Bengal",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "11": {
+      "id": "11",
+      "name": "Pacific Central-American Coastal",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "37": {
+      "id": "37",
+      "name": "Sulu-Celebes Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "35": {
+      "id": "35",
+      "name": "Gulf of Thailand",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "17": {
+      "id": "17",
+      "name": "North Brazil Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "28": {
+      "id": "28",
+      "name": "Guinea Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "31": {
+      "id": "31",
+      "name": "Somali Coastal Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "38": {
+      "id": "38",
+      "name": "Indonesian Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "16": {
+      "id": "16",
+      "name": "East Brazil Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "13": {
+      "id": "13",
+      "name": "Humboldt Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "29": {
+      "id": "29",
+      "name": "Benguela Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "39": {
+      "id": "39",
+      "name": "North Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "40": {
+      "id": "40",
+      "name": "Northeast Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "30": {
+      "id": "30",
+      "name": "Agulhas Current",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "45": {
+      "id": "45",
+      "name": "Northwest Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "44": {
+      "id": "44",
+      "name": "West Central Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "41": {
+      "id": "41",
+      "name": "East Central Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "15": {
+      "id": "15",
+      "name": "South Brazil Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "43": {
+      "id": "43",
+      "name": "Southwest Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "46": {
+      "id": "46",
+      "name": "New Zealand Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "14": {
+      "id": "14",
+      "name": "Patagonian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "42": {
+      "id": "42",
+      "name": "Southeast Australian Shelf",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "61": {
+      "id": "61",
+      "name": "Antarctic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "1": {
+      "id": "1",
+      "name": "East Bering Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    }
+  }
+}

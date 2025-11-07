@@ -1,0 +1,309 @@
+{
+  "map_type": "FAO",
+  "total_zones": 22,
+  "zones": {
+    "21": {
+      "id": "21",
+      "name": "NW Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "27": {
+      "id": "27",
+      "name": "NE Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "31": {
+      "id": "31",
+      "name": "W Central Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "34": {
+      "id": "34",
+      "name": "E Central Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "37": {
+      "id": "37",
+      "name": "Med & Black Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "41": {
+      "id": "41",
+      "name": "SW Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "47": {
+      "id": "47",
+      "name": "SE Atlantic",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "48": {
+      "id": "48",
+      "name": "Antarctic (S Atlantic)",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "51": {
+      "id": "51",
+      "name": "W Indian",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "57": {
+      "id": "57",
+      "name": "E Indian",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "58": {
+      "id": "58",
+      "name": "Antarctic (S Indian)",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "67": {
+      "id": "67",
+      "name": "NE Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "77": {
+      "id": "77",
+      "name": "E Central Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "87": {
+      "id": "87",
+      "name": "SE Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "18": {
+      "id": "18",
+      "name": "Arctic Sea",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "61": {
+      "id": "61",
+      "name": "NW Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "71": {
+      "id": "71",
+      "name": "W Central Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "81": {
+      "id": "81",
+      "name": "SW Pacific",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "88": {
+      "id": "88",
+      "name": "Antarctic (S Pacific)",
+      "has_data": true,
+      "indicators": [
+        "MCP",
+        "MSIS",
+        "NPP",
+        "OXY",
+        "PH",
+        "SBOT",
+        "SPP",
+        "SST"
+      ]
+    },
+    "99": {
+      "id": "99",
+      "name": "",
+      "has_data": false,
+      "indicators": []
+    },
+    "999": {
+      "id": "999",
+      "name": "MinBogus",
+      "has_data": false,
+      "indicators": []
+    },
+    "9999": {
+      "id": "9999",
+      "name": "MaxBogus",
+      "has_data": false,
+      "indicators": []
+    }
+  }
+}

@@ -1,0 +1,6213 @@
+{
+  "total_by_type": {
+    "FAO": 22,
+    "LME": 66,
+    "EEZ": 280,
+    "BGCP": 54
+  },
+  "all_zones": {
+    "FAO": {
+      "21": {
+        "id": "21",
+        "name": "NW Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "27": {
+        "id": "27",
+        "name": "NE Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "31": {
+        "id": "31",
+        "name": "W Central Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "34": {
+        "id": "34",
+        "name": "E Central Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "37": {
+        "id": "37",
+        "name": "Med & Black Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "41": {
+        "id": "41",
+        "name": "SW Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "47": {
+        "id": "47",
+        "name": "SE Atlantic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "48": {
+        "id": "48",
+        "name": "Antarctic (S Atlantic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "51": {
+        "id": "51",
+        "name": "W Indian",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "57": {
+        "id": "57",
+        "name": "E Indian",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "58": {
+        "id": "58",
+        "name": "Antarctic (S Indian)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "67": {
+        "id": "67",
+        "name": "NE Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "77": {
+        "id": "77",
+        "name": "E Central Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "87": {
+        "id": "87",
+        "name": "SE Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "18": {
+        "id": "18",
+        "name": "Arctic Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "61": {
+        "id": "61",
+        "name": "NW Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "71": {
+        "id": "71",
+        "name": "W Central Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "81": {
+        "id": "81",
+        "name": "SW Pacific",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "88": {
+        "id": "88",
+        "name": "Antarctic (S Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "99": {
+        "id": "99",
+        "name": "",
+        "has_data": false,
+        "indicators": []
+      },
+      "999": {
+        "id": "999",
+        "name": "MinBogus",
+        "has_data": false,
+        "indicators": []
+      },
+      "9999": {
+        "id": "9999",
+        "name": "MaxBogus",
+        "has_data": false,
+        "indicators": []
+      }
+    },
+    "LME": {
+      "64": {
+        "id": "64",
+        "name": "Arctic Ocean",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "65": {
+        "id": "65",
+        "name": "Arctic Archipelago",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "59": {
+        "id": "59",
+        "name": "Greenland Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "20": {
+        "id": "20",
+        "name": "Barents Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "58": {
+        "id": "58",
+        "name": "Kara Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "66": {
+        "id": "66",
+        "name": "Baffin Bay/Davis Straight",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "56": {
+        "id": "56",
+        "name": "East Siberian Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "57": {
+        "id": "57",
+        "name": "Laptev Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "54": {
+        "id": "54",
+        "name": "Chukchi Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "55": {
+        "id": "55",
+        "name": "Beaufort Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "18": {
+        "id": "18",
+        "name": "West Greenland Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "21": {
+        "id": "21",
+        "name": "Norwegian Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "19": {
+        "id": "19",
+        "name": "Iceland Shelf/Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "63": {
+        "id": "63",
+        "name": "Hudson Bay",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "23": {
+        "id": "23",
+        "name": "Baltic Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "53": {
+        "id": "53",
+        "name": "West Bering Sea",
+        "has_data": false,
+        "indicators": []
+      },
+      "60": {
+        "id": "60",
+        "name": "Faroe Plateau",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "52": {
+        "id": "52",
+        "name": "Okhotsk Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "22": {
+        "id": "22",
+        "name": "North Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "2": {
+        "id": "2",
+        "name": "Gulf of Alaska",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "24": {
+        "id": "24",
+        "name": "Celtic-Biscay Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "9": {
+        "id": "9",
+        "name": "Newfoundland-Labrador Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "50": {
+        "id": "50",
+        "name": "Sea of Japan/East Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "8": {
+        "id": "8",
+        "name": "Scotian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "51": {
+        "id": "51",
+        "name": "Oyashio Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "3": {
+        "id": "3",
+        "name": "California Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "62": {
+        "id": "62",
+        "name": "Black Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "7": {
+        "id": "7",
+        "name": "Northeast U.S. Continental Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "26": {
+        "id": "26",
+        "name": "Mediterranean Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "25": {
+        "id": "25",
+        "name": "Iberian Coastal",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "49": {
+        "id": "49",
+        "name": "Kuroshio Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "48": {
+        "id": "48",
+        "name": "Yellow Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "27": {
+        "id": "27",
+        "name": "Canary Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "47": {
+        "id": "47",
+        "name": "East China Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "6": {
+        "id": "6",
+        "name": "Southeast U.S. Continental Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "4": {
+        "id": "4",
+        "name": "Gulf of California",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "5": {
+        "id": "5",
+        "name": "Gulf of Mexico",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "32": {
+        "id": "32",
+        "name": "Arabian Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "33": {
+        "id": "33",
+        "name": "Red Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "10": {
+        "id": "10",
+        "name": "Insular Pacific-Hawaiian",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "12": {
+        "id": "12",
+        "name": "Caribbean Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "36": {
+        "id": "36",
+        "name": "South China Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "34": {
+        "id": "34",
+        "name": "Bay of Bengal",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "11": {
+        "id": "11",
+        "name": "Pacific Central-American Coastal",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "37": {
+        "id": "37",
+        "name": "Sulu-Celebes Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "35": {
+        "id": "35",
+        "name": "Gulf of Thailand",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "17": {
+        "id": "17",
+        "name": "North Brazil Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "28": {
+        "id": "28",
+        "name": "Guinea Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "31": {
+        "id": "31",
+        "name": "Somali Coastal Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "38": {
+        "id": "38",
+        "name": "Indonesian Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "16": {
+        "id": "16",
+        "name": "East Brazil Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "13": {
+        "id": "13",
+        "name": "Humboldt Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "29": {
+        "id": "29",
+        "name": "Benguela Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "39": {
+        "id": "39",
+        "name": "North Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "40": {
+        "id": "40",
+        "name": "Northeast Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "30": {
+        "id": "30",
+        "name": "Agulhas Current",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "45": {
+        "id": "45",
+        "name": "Northwest Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "44": {
+        "id": "44",
+        "name": "West Central Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "41": {
+        "id": "41",
+        "name": "East Central Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "15": {
+        "id": "15",
+        "name": "South Brazil Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "43": {
+        "id": "43",
+        "name": "Southwest Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "46": {
+        "id": "46",
+        "name": "New Zealand Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "14": {
+        "id": "14",
+        "name": "Patagonian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "42": {
+        "id": "42",
+        "name": "Southeast Australian Shelf",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "61": {
+        "id": "61",
+        "name": "Antarctic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "1": {
+        "id": "1",
+        "name": "East Bering Sea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      }
+    },
+    "EEZ": {
+      "8": {
+        "id": "8",
+        "name": "Albania",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "12": {
+        "id": "12",
+        "name": "Algeria",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "16": {
+        "id": "16",
+        "name": "American Samoa",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "24": {
+        "id": "24",
+        "name": "Angola",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "28": {
+        "id": "28",
+        "name": "Antigua & Barbuda",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "32": {
+        "id": "32",
+        "name": "Argentina",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "36": {
+        "id": "36",
+        "name": "Australia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "37": {
+        "id": "37",
+        "name": "Macquarie Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "38": {
+        "id": "38",
+        "name": "Lord Howe Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "44": {
+        "id": "44",
+        "name": "Bahamas",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "48": {
+        "id": "48",
+        "name": "Bahrain",
+        "has_data": false,
+        "indicators": []
+      },
+      "50": {
+        "id": "50",
+        "name": "Bangladesh",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "52": {
+        "id": "52",
+        "name": "Barbados",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "56": {
+        "id": "56",
+        "name": "Belgium",
+        "has_data": false,
+        "indicators": []
+      },
+      "60": {
+        "id": "60",
+        "name": "Bermuda (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "70": {
+        "id": "70",
+        "name": "Bosnia & Herzegovina",
+        "has_data": false,
+        "indicators": []
+      },
+      "74": {
+        "id": "74",
+        "name": "Bouvet Isl. (Norway)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "76": {
+        "id": "76",
+        "name": "Brazil",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "77": {
+        "id": "77",
+        "name": "Trindade & Martim Vaz Isl. (Brazil)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "84": {
+        "id": "84",
+        "name": "Belize",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "86": {
+        "id": "86",
+        "name": "Chagos Archipelago (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "92": {
+        "id": "92",
+        "name": "British Virgin Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "96": {
+        "id": "96",
+        "name": "Brunei Darussalam",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "100": {
+        "id": "100",
+        "name": "Bulgaria",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "104": {
+        "id": "104",
+        "name": "Myanmar",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "111": {
+        "id": "111",
+        "name": "Eritrea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "116": {
+        "id": "116",
+        "name": "Cambodia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "120": {
+        "id": "120",
+        "name": "Cameroon",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "132": {
+        "id": "132",
+        "name": "Cape Verde",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "136": {
+        "id": "136",
+        "name": "Cayman Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "144": {
+        "id": "144",
+        "name": "Sri Lanka",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "153": {
+        "id": "153",
+        "name": "Easter Isl. (Chile)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "154": {
+        "id": "154",
+        "name": "Desventuradas Isl. (Chile)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "155": {
+        "id": "155",
+        "name": "Juan Fernandez Islands (Chile)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "156": {
+        "id": "156",
+        "name": "China",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "157": {
+        "id": "157",
+        "name": "Taiwan",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "162": {
+        "id": "162",
+        "name": "Christmas Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "166": {
+        "id": "166",
+        "name": "Cocos (Keeling) Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "174": {
+        "id": "174",
+        "name": "Comoros Isl.",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "175": {
+        "id": "175",
+        "name": "Mayotte (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "178": {
+        "id": "178",
+        "name": "Congo, R. of",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "180": {
+        "id": "180",
+        "name": "Congo (ex-Zaire)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "184": {
+        "id": "184",
+        "name": "Cook Islands",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "191": {
+        "id": "191",
+        "name": "Croatia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "192": {
+        "id": "192",
+        "name": "Cuba",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "197": {
+        "id": "197",
+        "name": "Cyprus (North)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "198": {
+        "id": "198",
+        "name": "Cyprus (South)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "204": {
+        "id": "204",
+        "name": "Benin",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "212": {
+        "id": "212",
+        "name": "Dominica",
+        "has_data": false,
+        "indicators": []
+      },
+      "214": {
+        "id": "214",
+        "name": "Dominican Republic",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "218": {
+        "id": "218",
+        "name": "Ecuador",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "219": {
+        "id": "219",
+        "name": "Galapagos Isl. (Ecuador)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "222": {
+        "id": "222",
+        "name": "El Salvador",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "226": {
+        "id": "226",
+        "name": "Equatorial Guinea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "233": {
+        "id": "233",
+        "name": "Estonia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "234": {
+        "id": "234",
+        "name": "Faeroe Isl. (Denmark)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "238": {
+        "id": "238",
+        "name": "Falkland Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "239": {
+        "id": "239",
+        "name": "South Georgia & Sandwich Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "242": {
+        "id": "242",
+        "name": "Fiji",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "251": {
+        "id": "251",
+        "name": "Mozambique Channel Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "252": {
+        "id": "252",
+        "name": "Tromelin Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "254": {
+        "id": "254",
+        "name": "French Guiana",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "258": {
+        "id": "258",
+        "name": "French Polynesia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "262": {
+        "id": "262",
+        "name": "Djibouti",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "266": {
+        "id": "266",
+        "name": "Gabon",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "268": {
+        "id": "268",
+        "name": "Georgia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "270": {
+        "id": "270",
+        "name": "Gambia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "274": {
+        "id": "274",
+        "name": "Gaza Strip",
+        "has_data": false,
+        "indicators": []
+      },
+      "277": {
+        "id": "277",
+        "name": "Germany (North Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "278": {
+        "id": "278",
+        "name": "Germany (Baltic Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "288": {
+        "id": "288",
+        "name": "Ghana",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "300": {
+        "id": "300",
+        "name": "Greece",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "304": {
+        "id": "304",
+        "name": "Greenland",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "308": {
+        "id": "308",
+        "name": "Grenada",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "316": {
+        "id": "316",
+        "name": "Guam (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "324": {
+        "id": "324",
+        "name": "Guinea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "328": {
+        "id": "328",
+        "name": "Guyana",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "332": {
+        "id": "332",
+        "name": "Haiti",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "334": {
+        "id": "334",
+        "name": "Heard & McDonald Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "344": {
+        "id": "344",
+        "name": "Hong Kong (China)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "352": {
+        "id": "352",
+        "name": "Iceland",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "356": {
+        "id": "356",
+        "name": "India (mainland)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "357": {
+        "id": "357",
+        "name": "Andaman & Nicobar Isl. (India)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "368": {
+        "id": "368",
+        "name": "Iraq",
+        "has_data": false,
+        "indicators": []
+      },
+      "380": {
+        "id": "380",
+        "name": "Italy",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "384": {
+        "id": "384",
+        "name": "CÃ´te d'Ivoire",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "388": {
+        "id": "388",
+        "name": "Jamaica",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "390": {
+        "id": "390",
+        "name": "Japan (main islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "393": {
+        "id": "393",
+        "name": "Japan (Daito Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "396": {
+        "id": "396",
+        "name": "Johnston Atoll (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "404": {
+        "id": "404",
+        "name": "Kenya",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "408": {
+        "id": "408",
+        "name": "Korea (North)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "410": {
+        "id": "410",
+        "name": "Korea (South)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "414": {
+        "id": "414",
+        "name": "Kuwait",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "422": {
+        "id": "422",
+        "name": "Lebanon",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "428": {
+        "id": "428",
+        "name": "Latvia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "430": {
+        "id": "430",
+        "name": "Liberia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "434": {
+        "id": "434",
+        "name": "Libya",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "440": {
+        "id": "440",
+        "name": "Lithuania",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "450": {
+        "id": "450",
+        "name": "Madagascar",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "459": {
+        "id": "459",
+        "name": "Malaysia (Peninsula West)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "460": {
+        "id": "460",
+        "name": "Malaysia (Peninsula East)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "461": {
+        "id": "461",
+        "name": "Malaysia (Sabah)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "462": {
+        "id": "462",
+        "name": "Maldives",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "463": {
+        "id": "463",
+        "name": "Malaysia (Sarawak)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "470": {
+        "id": "470",
+        "name": "Malta",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "474": {
+        "id": "474",
+        "name": "Martinique (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "478": {
+        "id": "478",
+        "name": "Mauritania",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "480": {
+        "id": "480",
+        "name": "Mauritius",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "488": {
+        "id": "488",
+        "name": "Hawaii Northwest Islands (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "500": {
+        "id": "500",
+        "name": "Montserrat (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "508": {
+        "id": "508",
+        "name": "Mozambique",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "512": {
+        "id": "512",
+        "name": "Oman",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "516": {
+        "id": "516",
+        "name": "Namibia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "520": {
+        "id": "520",
+        "name": "Nauru",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "528": {
+        "id": "528",
+        "name": "Netherlands",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "540": {
+        "id": "540",
+        "name": "New Caledonia (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "548": {
+        "id": "548",
+        "name": "Vanuatu",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "554": {
+        "id": "554",
+        "name": "New Zealand",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "555": {
+        "id": "555",
+        "name": "Kermadec Isl. (New Zealand)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "566": {
+        "id": "566",
+        "name": "Nigeria",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "570": {
+        "id": "570",
+        "name": "Niue (New Zealand)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "574": {
+        "id": "574",
+        "name": "Norfolk Isl. (Australia)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "578": {
+        "id": "578",
+        "name": "Norway",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "579": {
+        "id": "579",
+        "name": "Jan Mayen Isl. (Norway)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "580": {
+        "id": "580",
+        "name": "Northern Marianas (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "583": {
+        "id": "583",
+        "name": "Micronesia (Federated States of)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "584": {
+        "id": "584",
+        "name": "Marshall Isl.",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "586": {
+        "id": "586",
+        "name": "Pakistan",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "598": {
+        "id": "598",
+        "name": "Papua New Guinea",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "604": {
+        "id": "604",
+        "name": "Peru",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "608": {
+        "id": "608",
+        "name": "Philippines",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "612": {
+        "id": "612",
+        "name": "Pitcairn (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "616": {
+        "id": "616",
+        "name": "Poland",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "620": {
+        "id": "620",
+        "name": "Portugal",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "621": {
+        "id": "621",
+        "name": "Madeira Isl. (Portugal)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "622": {
+        "id": "622",
+        "name": "Azores Isl. (Portugal)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "624": {
+        "id": "624",
+        "name": "Guinea-Bissau",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "626": {
+        "id": "626",
+        "name": "Timor Leste",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "630": {
+        "id": "630",
+        "name": "Puerto Rico (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "634": {
+        "id": "634",
+        "name": "Qatar",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "638": {
+        "id": "638",
+        "name": "RÃ©union (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "642": {
+        "id": "642",
+        "name": "Romania",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "647": {
+        "id": "647",
+        "name": "Russia (Black Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "648": {
+        "id": "648",
+        "name": "Russia (Baltic Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "649": {
+        "id": "649",
+        "name": "Russia (Far East)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "654": {
+        "id": "654",
+        "name": "Saint Helena (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "659": {
+        "id": "659",
+        "name": "Saint Kitts & Nevis",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "660": {
+        "id": "660",
+        "name": "Anguilla (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "662": {
+        "id": "662",
+        "name": "Saint Lucia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "666": {
+        "id": "666",
+        "name": "Saint Pierre & Miquelon (France)",
+        "has_data": false,
+        "indicators": []
+      },
+      "670": {
+        "id": "670",
+        "name": "Saint Vincent & the Grenadines",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "678": {
+        "id": "678",
+        "name": "Sao Tome & Principe",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "683": {
+        "id": "683",
+        "name": "Saudi Arabia (Red Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "684": {
+        "id": "684",
+        "name": "Saudi Arabia (Persian Gulf)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "686": {
+        "id": "686",
+        "name": "Senegal",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "690": {
+        "id": "690",
+        "name": "Seychelles",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "694": {
+        "id": "694",
+        "name": "Sierra Leone",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "702": {
+        "id": "702",
+        "name": "Singapore",
+        "has_data": false,
+        "indicators": []
+      },
+      "704": {
+        "id": "704",
+        "name": "Vietnam",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "705": {
+        "id": "705",
+        "name": "Slovenia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "706": {
+        "id": "706",
+        "name": "Somalia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "723": {
+        "id": "723",
+        "name": "Canary Isl. (Spain)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "736": {
+        "id": "736",
+        "name": "Sudan",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "740": {
+        "id": "740",
+        "name": "Suriname",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "744": {
+        "id": "744",
+        "name": "Svalbard Isl. (Norway)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "760": {
+        "id": "760",
+        "name": "Syria",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "768": {
+        "id": "768",
+        "name": "Togo",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "772": {
+        "id": "772",
+        "name": "Tokelau (New Zealand)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "776": {
+        "id": "776",
+        "name": "Tonga",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "780": {
+        "id": "780",
+        "name": "Trinidad & Tobago",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "784": {
+        "id": "784",
+        "name": "United Arab Emirates",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "788": {
+        "id": "788",
+        "name": "Tunisia",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "793": {
+        "id": "793",
+        "name": "Turkey (Mediterranean Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "794": {
+        "id": "794",
+        "name": "Turkey (Black Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "796": {
+        "id": "796",
+        "name": "Turks & Caicos Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "798": {
+        "id": "798",
+        "name": "Tuvalu",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "804": {
+        "id": "804",
+        "name": "Ukraine",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "830": {
+        "id": "830",
+        "name": "Channel Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "834": {
+        "id": "834",
+        "name": "Tanzania",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "842": {
+        "id": "842",
+        "name": "Hawaii Main Islands (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "844": {
+        "id": "844",
+        "name": "Palmyra Atoll & Kingman Reef (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "845": {
+        "id": "845",
+        "name": "Jarvis Isl. (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "846": {
+        "id": "846",
+        "name": "Howland & Baker Isl. (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "850": {
+        "id": "850",
+        "name": "US Virgin Islands",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "855": {
+        "id": "855",
+        "name": "Ascension Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "856": {
+        "id": "856",
+        "name": "Tristan da Cunha Isl. (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "858": {
+        "id": "858",
+        "name": "Uruguay",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "862": {
+        "id": "862",
+        "name": "Venezuela",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "872": {
+        "id": "872",
+        "name": "Wake Isl. (USA)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "876": {
+        "id": "876",
+        "name": "Wallis & Futuna Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "882": {
+        "id": "882",
+        "name": "Samoa",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "891": {
+        "id": "891",
+        "name": "Montenegro",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "895": {
+        "id": "895",
+        "name": "St Paul & Amsterdam Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "896": {
+        "id": "896",
+        "name": "Crozet Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "897": {
+        "id": "897",
+        "name": "Kerguelen Isl. (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "898": {
+        "id": "898",
+        "name": "Clipperton Isl.  (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "899": {
+        "id": "899",
+        "name": "Corsica (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "900": {
+        "id": "900",
+        "name": "Crete (Greece)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "901": {
+        "id": "901",
+        "name": "Sicily (Italy)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "902": {
+        "id": "902",
+        "name": "Sardinia (Italy)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "903": {
+        "id": "903",
+        "name": "Balearic Island (Spain)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "907": {
+        "id": "907",
+        "name": "Bonaire (Netherlands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "908": {
+        "id": "908",
+        "name": "Saba & Sint Eustaius (Netherlands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "909": {
+        "id": "909",
+        "name": "Sint Maarten (Netherlands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "910": {
+        "id": "910",
+        "name": "South Orkney Islands (UK)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "911": {
+        "id": "911",
+        "name": "Oman (Musandam)",
+        "has_data": false,
+        "indicators": []
+      },
+      "912": {
+        "id": "912",
+        "name": "Russia (Kara Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "914": {
+        "id": "914",
+        "name": "Sweden (Baltic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "915": {
+        "id": "915",
+        "name": "Sweden (West Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "916": {
+        "id": "916",
+        "name": "Yemen (Red Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "917": {
+        "id": "917",
+        "name": "Yemen (Arabian Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "918": {
+        "id": "918",
+        "name": "France (Mediterranean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "919": {
+        "id": "919",
+        "name": "France (Atlantic Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "920": {
+        "id": "920",
+        "name": "Honduras (Pacific)",
+        "has_data": false,
+        "indicators": []
+      },
+      "921": {
+        "id": "921",
+        "name": "Honduras (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "922": {
+        "id": "922",
+        "name": "Iran (Persian Gulf)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "923": {
+        "id": "923",
+        "name": "Iran (Sea of Oman)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "926": {
+        "id": "926",
+        "name": "Canada (East Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "927": {
+        "id": "927",
+        "name": "Colombia (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "928": {
+        "id": "928",
+        "name": "Colombia (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "929": {
+        "id": "929",
+        "name": "Costa Rica (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "930": {
+        "id": "930",
+        "name": "Costa Rica (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "932": {
+        "id": "932",
+        "name": "Denmark (North Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "933": {
+        "id": "933",
+        "name": "Egypt (Mediterranean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "934": {
+        "id": "934",
+        "name": "Egypt (Red Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "935": {
+        "id": "935",
+        "name": "Guatemala (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "936": {
+        "id": "936",
+        "name": "Guatemala (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "938": {
+        "id": "938",
+        "name": "Indonesia (Indian Ocean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "939": {
+        "id": "939",
+        "name": "Israel (Mediterranean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "941": {
+        "id": "941",
+        "name": "Kiribati (Gilbert Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "942": {
+        "id": "942",
+        "name": "Kiribati (Line Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "943": {
+        "id": "943",
+        "name": "Kiribati (Phoenix Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "944": {
+        "id": "944",
+        "name": "Mexico (Atlantic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "945": {
+        "id": "945",
+        "name": "Mexico (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "946": {
+        "id": "946",
+        "name": "Morocco (Central)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "947": {
+        "id": "947",
+        "name": "Morocco (Mediterranean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "948": {
+        "id": "948",
+        "name": "Morocco (South)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "949": {
+        "id": "949",
+        "name": "Nicaragua (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "950": {
+        "id": "950",
+        "name": "Nicaragua (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "951": {
+        "id": "951",
+        "name": "Panama (Caribbean)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "952": {
+        "id": "952",
+        "name": "Panama (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "953": {
+        "id": "953",
+        "name": "South Africa (Atlantic Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "954": {
+        "id": "954",
+        "name": "South Africa (Indian Ocean Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "711": {
+        "id": "711",
+        "name": "South Africa (Prince Edward Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "956": {
+        "id": "956",
+        "name": "Thailand (Andaman Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "957": {
+        "id": "957",
+        "name": "Thailand (Gulf of Thailand)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "959": {
+        "id": "959",
+        "name": "USA (Alaska, Subarctic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "962": {
+        "id": "962",
+        "name": "Spain (Mediterranean and Gulf of Cadiz)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "963": {
+        "id": "963",
+        "name": "Spain (Northwest)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "966": {
+        "id": "966",
+        "name": "Turkey (Marmara Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "967": {
+        "id": "967",
+        "name": "Aruba (Netherlands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "968": {
+        "id": "968",
+        "name": "United Arab Emirates (Fujairah)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "969": {
+        "id": "969",
+        "name": "Brazil (Fernando de Noronha)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "970": {
+        "id": "970",
+        "name": "Brazil (St Paul and St. Peter Archipelago)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "971": {
+        "id": "971",
+        "name": "Japan (Ogasawara Islands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "972": {
+        "id": "972",
+        "name": "Glorieuse Islands (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "906": {
+        "id": "906",
+        "name": "CuraÃ§ao (Netherlands)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "905": {
+        "id": "905",
+        "name": "Saint Martin (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "904": {
+        "id": "904",
+        "name": "St Barthelemy (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "312": {
+        "id": "312",
+        "name": "Guadeloupe (France)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "958": {
+        "id": "958",
+        "name": "USA (Alaska, Arctic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "400": {
+        "id": "400",
+        "name": "Jordan",
+        "has_data": false,
+        "indicators": []
+      },
+      "940": {
+        "id": "940",
+        "name": "Israel (Red Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "925": {
+        "id": "925",
+        "name": "Canada (Pacific)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "924": {
+        "id": "924",
+        "name": "Canada (Arctic)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "645": {
+        "id": "645",
+        "name": "Russia (Barents Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "931": {
+        "id": "931",
+        "name": "Denmark (Baltic Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "90": {
+        "id": "90",
+        "name": "Solomon Isl.",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "585": {
+        "id": "585",
+        "name": "Palau",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "246": {
+        "id": "246",
+        "name": "Finland",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "826": {
+        "id": "826",
+        "name": "United Kingdom",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "361": {
+        "id": "361",
+        "name": "Indonesia (Eastern)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "937": {
+        "id": "937",
+        "name": "Indonesia (Central)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "152": {
+        "id": "152",
+        "name": "Chile",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "372": {
+        "id": "372",
+        "name": "Ireland",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "848": {
+        "id": "848",
+        "name": "USA (West Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "852": {
+        "id": "852",
+        "name": "USA (Gulf of Mexico)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "851": {
+        "id": "851",
+        "name": "USA (East Coast)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "913": {
+        "id": "913",
+        "name": "Russia (Laptev to Chukchi Sea)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      }
+    },
+    "BGCP": {
+      "56": {
+        "id": "56",
+        "name": "Polar - Boreal Polar Province (POLR)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "46": {
+        "id": "46",
+        "name": "Polar - Atlantic Arctic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "42": {
+        "id": "42",
+        "name": "Polar - Atlantic Subarctic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "33": {
+        "id": "33",
+        "name": "Westerlies - N. Atlantic Drift Province (WWDR)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "32": {
+        "id": "32",
+        "name": "Westerlies - Gulf Stream Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "21": {
+        "id": "21",
+        "name": "Westerlies - N. Atlantic Subtropical Gyral Province (West) (STGW)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "10": {
+        "id": "10",
+        "name": "Trades - N. Atlantic Tropical Gyral Province (TRPG)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "6": {
+        "id": "6",
+        "name": "Trades - Western Tropical Atlantic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "1": {
+        "id": "1",
+        "name": "Trades - Eastern Tropical Atlantic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "55": {
+        "id": "55",
+        "name": "Trades - South Atlantic Gyral Province (SATG)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "54": {
+        "id": "54",
+        "name": "Coastal - NE Atlantic Shelves Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "53": {
+        "id": "53",
+        "name": "Coastal - Canary Coastal Province (EACB)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "52": {
+        "id": "52",
+        "name": "Coastal - Guinea Current Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "51": {
+        "id": "51",
+        "name": "Coastal - Guianas Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "50": {
+        "id": "50",
+        "name": "Coastal - NW Atlantic Shelves Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "49": {
+        "id": "49",
+        "name": "Westerlies - Mediterranean Sea, Black Sea Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "48": {
+        "id": "48",
+        "name": "Trades - Caribbean Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "47": {
+        "id": "47",
+        "name": "Westerlies - N. Atlantic Subtropical Gyral Province (East) (STGE)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "45": {
+        "id": "45",
+        "name": "Coastal - Brazil Current Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "44": {
+        "id": "44",
+        "name": "Coastal - SW Atlantic Shelves Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "43": {
+        "id": "43",
+        "name": "Coastal - Benguela Current Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "41": {
+        "id": "41",
+        "name": "Trades - Indian Monsoon Gyres Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "40": {
+        "id": "40",
+        "name": "Trades - Indian S. Subtropical Gyre Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "39": {
+        "id": "39",
+        "name": "Coastal - E. Africa Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "38": {
+        "id": "38",
+        "name": "Coastal - Red Sea, Persian Gulf Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "37": {
+        "id": "37",
+        "name": "Coastal - NW Arabian Upwelling Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "36": {
+        "id": "36",
+        "name": "Coastal - E. India Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "35": {
+        "id": "35",
+        "name": "Coastal - W. India Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "34": {
+        "id": "34",
+        "name": "Coastal - Australia-Indonesia Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "31": {
+        "id": "31",
+        "name": "Polar - N. Pacific Epicontinental Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "30": {
+        "id": "30",
+        "name": "Westerlies - Pacific Subarctic Gyres Province (East)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "29": {
+        "id": "29",
+        "name": "Westerlies - Pacific Subarctic Gyres Province (West)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "28": {
+        "id": "28",
+        "name": "Westerlies - Kuroshio Current Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "27": {
+        "id": "27",
+        "name": "Westerlies - N. Pacific Polar Front Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "25": {
+        "id": "25",
+        "name": "Westerlies - N. Pacific Subtropical Gyre Province (West)",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "23": {
+        "id": "23",
+        "name": "Westerlies - Tasman Sea Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "22": {
+        "id": "22",
+        "name": "Westerlies - S. Pacific Subtropical Gyre Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "20": {
+        "id": "20",
+        "name": "Trades - N. Pacific Tropical Gyre Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "19": {
+        "id": "19",
+        "name": "Trades - N. Pacific Equatorial Countercurrent Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "18": {
+        "id": "18",
+        "name": "Trades - Pacific Equatorial Divergence Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "17": {
+        "id": "17",
+        "name": "Trades - W. Pacific Warm Pool Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "16": {
+        "id": "16",
+        "name": "Trades - Archipelagic Deep Basins Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "15": {
+        "id": "15",
+        "name": "Coastal - Alaska Downwelling Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "14": {
+        "id": "14",
+        "name": "Coastal - California Upwelling Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "13": {
+        "id": "13",
+        "name": "Coastal - Central American Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "12": {
+        "id": "12",
+        "name": "Coastal - Chile-Peru Current Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "11": {
+        "id": "11",
+        "name": "Coastal - China Sea Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "9": {
+        "id": "9",
+        "name": "Coastal - Sunda-Arafura Shelves Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "8": {
+        "id": "8",
+        "name": "Coastal - East Australian Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "7": {
+        "id": "7",
+        "name": "Coastal - New Zealand Coastal Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "5": {
+        "id": "5",
+        "name": "Westerlies - S. Subtropical Convergence Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "4": {
+        "id": "4",
+        "name": "Westerlies - Subantarctic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "3": {
+        "id": "3",
+        "name": "Polar - Antarctic Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      },
+      "2": {
+        "id": "2",
+        "name": "Polar - Austral Polar Province",
+        "has_data": true,
+        "indicators": [
+          "MCP",
+          "MSIS",
+          "NPP",
+          "OXY",
+          "PH",
+          "SBOT",
+          "SPP",
+          "SST"
+        ]
+      }
+    }
+  }
+}
