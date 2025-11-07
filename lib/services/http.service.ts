@@ -68,17 +68,26 @@ export class HttpService {
       // Log all errors for debugging, but handle network errors gracefully
       const isNetworkError = error.code === 'ERR_NETWORK' || error.code === 'ECONNREFUSED' || error.code === 'ETIMEDOUT';
       
-      // Log detailed error information for debugging
-      console.error('API Request Error:', {
+      // Extract error details more safely
+      const errorDetails: any = {
         url: apiUrlForError,
-        code: error.code || 'UNKNOWN',
-        message: error.message || 'Unknown error',
-        status: error.response?.status,
-        statusText: error.response?.statusText,
-        response: error.response?.data,
+        code: error?.code || 'UNKNOWN',
+        message: error?.message || 'Unknown error',
+        status: error?.response?.status,
+        statusText: error?.response?.statusText,
+        response: error?.response?.data,
         isNetworkError,
-        fullError: error
-      });
+      };
+      
+      // Try to stringify the error object safely
+      try {
+        errorDetails.fullError = JSON.stringify(error, Object.getOwnPropertyNames(error));
+      } catch (e) {
+        errorDetails.fullError = String(error);
+      }
+      
+      // Log detailed error information for debugging
+      console.error('API Request Error:', errorDetails);
       
       // Throw error so calling code can handle gracefully
       throw error;

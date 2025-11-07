@@ -839,21 +839,31 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
       
       onZoneClicked(dataRef.current);
     } catch (error: any) {
-      if (error.code === 'ERR_NETWORK' || error.code === 'ECONNREFUSED' || error.code === 'ETIMEDOUT') {
-        // API not running
-      } else if (error.response?.status === 404) {
-        const errorDetails = {
-          model,
-          indicator: climateIndicator.name,
-          climate: climateScenario.name,
-          period: periodScenario.name,
-          id,
-          errorMessage: error.response?.data?.error || error.message,
-          errorData: error.response?.data
-        };
-        console.error('Zone data file not found:', errorDetails);
+      // Log error details for debugging
+      const errorDetails: any = {
+        model,
+        indicator: climateIndicator.name,
+        climate: climateScenario.name,
+        period: periodScenario.name,
+        id,
+        errorCode: error?.code,
+        errorMessage: error?.message,
+        errorStatus: error?.response?.status,
+        errorStatusText: error?.response?.statusText,
+        errorResponse: error?.response?.data,
+        errorName: error?.name,
+        errorStack: error?.stack
+      };
+      
+      if (error?.code === 'ERR_NETWORK' || error?.code === 'ECONNREFUSED' || error?.code === 'ETIMEDOUT') {
+        // API not running - network error
+        console.warn('Zone API network error:', errorDetails);
+      } else if (error?.response?.status === 404) {
+        // Zone data file not found
+        console.warn('Zone data file not found:', errorDetails);
       } else {
-        console.error('Error getting zone data:', error);
+        // Other error
+        console.error('Error getting zone data:', errorDetails);
       }
       onZoneClicked(dataRef.current);
     } finally {
