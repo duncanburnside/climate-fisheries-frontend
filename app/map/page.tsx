@@ -78,20 +78,43 @@ export default function MapPage() {
   });
   const [dataKeys, setDataKeys] = useState<string[]>([]);
 
+  // Function to update chart X-axis labels
+  const updateChartXAxis = (yearsRange: number[] | [number, number]) => {
+    if (!yearsRange || yearsRange.length < 2) return;
+    const labels = [];
+    const startYear = yearsRange[0];
+    const endYear = yearsRange[1];
+    const yearStep = Math.ceil((endYear - startYear) / 5);
+    
+    for (let i = startYear; i <= endYear; i += yearStep) {
+      labels.push(i.toString());
+    }
+    
+    // Ensure the end year is included
+    if (labels[labels.length - 1] !== endYear.toString()) {
+      labels.push(endYear.toString());
+    }
+    
+    setChartLabels(labels);
+  };
+
+  // Initialize data on component mount
   useEffect(() => {
-    const stressors = climateInfoService.getClimateStressors();
-    const risks = climateInfoService.getClimateRisks();
-    const scenarios = climateInfoService.getClimateScenarios();
-    const periods = climateInfoService.getPeriodScenarios();
-
-    setClimateStressors(stressors as ClimateIndicator[]);
-    setClimateRisks(risks as ClimateIndicator[]);
-    setClimateScenarios(scenarios as ClimateScenario[]);
-    setPeriodScenarios(periods as PeriodScenario[]);
-
-    const selected = stressors[0];
+    const indicators = climateInfoService.getClimateIndicators();
+    const stressors = indicators.filter(ind => ind.type === 'stressor');
+    const risks = indicators.filter(ind => ind.type === 'risk');
+    const selected = indicators.find(ind => ind.id === 'SST') || indicators[0];
+    
+    setClimateStressors(stressors);
+    setClimateRisks(risks);
     setClimateIndicatorSelected(selected);
+    
+    const scenarios = climateInfoService.getClimateScenarios();
+    setClimateScenarios(scenarios);
     setClimateScenarioSelected(scenarios[0]);
+    
+    const periods = climateInfoService.getPeriodScenarios();
+    setPeriodScenarios(periods);
     setPeriodScenarioSelected(periods[0]);
 
     setLabel(selected.label);
@@ -138,22 +161,6 @@ export default function MapPage() {
       return () => clearTimeout(timer);
     }
   }, [climateScenarioSelected, climateIndicatorSelected, periodScenarioSelected]);
-
-  const updateChartXAxis = (yearsRange: number[] | [number, number]) => {
-    if (!yearsRange || yearsRange.length < 2) return;
-    const labels = [];
-    labels.push(yearsRange[0].toString());
-
-    for (let i = yearsRange[0] + 1; i < yearsRange[1]; i++) {
-      if (i % 25 === 0) {
-        labels.push(i.toString());
-      } else {
-        labels.push('');
-      }
-    }
-    labels.push(yearsRange[1].toString());
-    setChartLabels(labels);
-  };
 
   const switchClimateIndicator = (indicator: ClimateIndicator) => {
     if (climateIndicatorSelected === indicator) return;

@@ -30,30 +30,28 @@ export default function GlobePage() {
     
     setClimateScenarios(scenarios);
     setPeriodScenarios(periods);
-    
-    // Set defaults
-    if (allIndicators.length > 0 && !selectedIndicator) {
-      setSelectedIndicator(allIndicators[0]);
-    }
-    if (scenarios.length > 0 && !selectedClimate) {
-      setSelectedClimate(scenarios[0]);
-    }
-    if (periods.length > 0 && !selectedPeriod) {
-      setSelectedPeriod(periods[0]);
-    }
-  }, []);
+  }, [climateInfoService]);
 
+  // Set default indicator
+  useEffect(() => {
+    if (indicators.length > 0 && !selectedIndicator) {
+      setSelectedIndicator(indicators[0]);
+    }
+  }, [indicators, selectedIndicator]);
+
+  // Set default climate scenario
   useEffect(() => {
     if (climateScenarios.length > 0 && !selectedClimate) {
       setSelectedClimate(climateScenarios[0]);
     }
-  }, [climateScenarios]);
+  }, [climateScenarios, selectedClimate]);
 
+  // Set default period scenario
   useEffect(() => {
     if (periodScenarios.length > 0 && !selectedPeriod) {
       setSelectedPeriod(periodScenarios[0]);
     }
-  }, [periodScenarios]);
+  }, [periodScenarios, selectedPeriod]);
 
   return (
     <div className="min-h-screen bg-gray-900">
