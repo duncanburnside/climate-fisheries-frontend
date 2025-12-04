@@ -11,7 +11,7 @@ interface ZoneChartProps {
     datasets: {
       label: string;
       fill: boolean | string;
-      data: number[];
+      data: (number | null)[];
       borderColor: string;
       backgroundColor: string;
     }[];
