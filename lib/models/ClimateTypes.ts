@@ -46,7 +46,7 @@ export interface ChartData {
   datasets: {
     label: string;
     fill: boolean | string;
-    data: number[];
+    data: (number | null)[];
     borderColor: string;
     backgroundColor: string;
   }[];

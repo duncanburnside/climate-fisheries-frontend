@@ -22,8 +22,8 @@ export class MapService {
       this.pixelUrl = '/api/pixel';
     } else {
       // Use deployed backend by default
-      this.zoneUrl = 'https://climate-fisheries-backend.vercel.app/zone';
-      this.pixelUrl = 'https://climate-fisheries-backend.vercel.app/pixel';
+      this.zoneUrl = 'https://api.climatefisheries.org/zone';
+      this.pixelUrl = 'https://api.climatefisheries.org/pixel';
     }
   }
 

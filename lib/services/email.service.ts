@@ -18,7 +18,7 @@ export class EmailService {
       this.emailUrl = '/api/email';
     } else {
       // Use deployed backend by default
-      this.emailUrl = 'https://climate-fisheries-backend.vercel.app/email';
+      this.emailUrl = 'https://api.climatefisheries.org/email';
     }
   }
 

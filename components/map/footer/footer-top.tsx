@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import type { ClimateScenario, PeriodScenario, ClimateIndicator } from '@/lib/models/ClimateTypes';
+import PeriodRangeSlider from '../period-range-slider';
 
 interface FooterTopProps {
   climateScenarios: ClimateScenario[];
@@ -11,6 +12,8 @@ interface FooterTopProps {
   periodScenarioSelected: PeriodScenario;
   onPeriodScenarioChange: (period: PeriodScenario) => void;
   climateIndicator: ClimateIndicator;
+  onRangeChange?: (range: { start: string; end: string; startOpacity: number; endOpacity: number } | null) => void;
+  onYearRangeChange?: (yearRange: [number, number] | null) => void;
 }
 
 export default function FooterTop({
@@ -21,6 +24,8 @@ export default function FooterTop({
   periodScenarioSelected,
   onPeriodScenarioChange,
   climateIndicator,
+  onRangeChange,
+  onYearRangeChange,
 }: FooterTopProps) {
   return (
     <div className="space-y-4">
@@ -62,6 +67,14 @@ export default function FooterTop({
                 {period.label}
               </Button>
             ))}
+          </div>
+          <div className="mt-4">
+            <PeriodRangeSlider
+              periodScenarios={periodScenarios}
+              periodScenarioSelected={periodScenarioSelected}
+              onRangeChange={onRangeChange}
+              onYearRangeChange={onYearRangeChange}
+            />
           </div>
         </div>
       )}

@@ -23,6 +23,8 @@ interface LeftSidebarProps {
   methodId: string;
   collapsed: boolean;
   onToggleCollapse: () => void;
+  onRangeChange?: (range: { start: string; end: string; startOpacity: number; endOpacity: number } | null) => void;
+  onYearRangeChange?: (yearRange: [number, number] | null) => void;
 }
 
 export default function LeftSidebar({
@@ -41,6 +43,8 @@ export default function LeftSidebar({
   methodId,
   collapsed,
   onToggleCollapse,
+  onRangeChange,
+  onYearRangeChange,
 }: LeftSidebarProps) {
   return (
     <>
@@ -55,6 +59,8 @@ export default function LeftSidebar({
               periodScenarioSelected={periodScenarioSelected}
               onPeriodScenarioChange={onPeriodScenarioChange}
               climateIndicator={climateIndicator}
+              onRangeChange={onRangeChange}
+              onYearRangeChange={onYearRangeChange}
             />
             
             <div className="border-t border-gray-700 pt-6">

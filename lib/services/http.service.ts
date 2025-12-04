@@ -4,7 +4,7 @@ export class HttpService {
   // Use external backend URL if provided, otherwise use relative paths for Next.js API routes
   // For separate backend deployment, set NEXT_PUBLIC_API_URL environment variable
   // For integrated deployment (with API routes), leave empty to use relative paths
-  private url = process.env.NEXT_PUBLIC_API_URL || 'https://climate-fisheries-backend.vercel.app';
+  private url = process.env.NEXT_PUBLIC_API_URL || 'https://api.climatefisheries.org';
 
   async sendGet(url: string, requestOptions: AxiosRequestConfig = {}, params?: any): Promise<any> {
     try {

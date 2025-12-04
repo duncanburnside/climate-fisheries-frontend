@@ -105,8 +105,8 @@ export default function Home() {
         <div className="container mx-auto px-8 py-12 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="space-y-6">
-              <h1 className="text-5xl font-black">{title}</h1>
-              <Link href="/map" className="btn btn-accent btn-lg inline-block">
+              <h1 className="text-4xl md:text-5xl text-center md:text-left font-black">{title}</h1>
+              <Link href="/map" className="btn btn-accent btn-lg block md:inline-block max-w-[200px] mx-auto md:mx-0 text-center md:text-left">
                 VISIT MAP
               </Link>
               <hr className="border-color4" />
@@ -186,7 +186,7 @@ export default function Home() {
           <div className="text-center mt-8">
             <button
               onClick={() => scrollTo('motivation')}
-              className="btn btn-accent w-20 h-20 rounded-full"
+              className="btn btn-accent w-10 h-10"
             >
               <i className="fas fa-arrow-down"></i>
             </button>
@@ -400,7 +400,7 @@ export default function Home() {
       </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 h-12 bg-primary text-white flex items-center justify-center">
+      <footer className="h-12 bg-primary text-white flex items-center justify-center">
         <div className="text-sm">
           Copyright &copy; Changing Ocean Research Unit, University of British Columbia
         </div>

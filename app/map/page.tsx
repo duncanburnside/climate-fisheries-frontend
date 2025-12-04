@@ -12,36 +12,13 @@ import ColorbarDisplay from '@/components/map/colorbar-display';
 import Sidebar from '@/components/map/sidebar';
 import LeftSidebar from '@/components/map/left-sidebar';
 import { Toast } from '@/components/ui/toast';
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
-
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend,
-  Filler
-);
 
 export default function MapPage() {
   const router = useRouter();
   const [showSideBar, setShowSideBar] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [data, setData] = useState<any>(null);
-  const [title] = useState('Climate-Fisheries');
+  const [title] = useState('ClimateFisheries.org');
 
   const [map, setMap] = useState<MapTypes>(MapTypes.Grid);
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
@@ -77,6 +54,22 @@ export default function MapPage() {
     ]
   });
   const [dataKeys, setDataKeys] = useState<string[]>([]);
+  const [customRange, setCustomRange] = useState<{ start: string; end: string; startOpacity: number; endOpacity: number } | null>(null);
+  const [customYearRange, setCustomYearRange] = useState<[number, number] | null>(null);
+  
+  // Get year range for the selected period
+  const getPeriodYearRange = (periodName: string): [number, number] | null => {
+    switch (periodName) {
+      case 'present':
+        return [1986, 2005];
+      case 'mid':
+        return [2040, 2060];
+      case 'end':
+        return [2080, 2099];
+      default:
+        return null;
+    }
+  };
 
   // Function to update chart X-axis labels
   const updateChartXAxis = (yearsRange: number[] | [number, number]) => {
@@ -197,6 +190,8 @@ export default function MapPage() {
 
   const switchPeriodScenario = (period: PeriodScenario) => {
     setPeriodScenarioSelected(period);
+    // Clear custom range when switching periods so slider reflects the period
+    setCustomYearRange(null);
   };
 
   const onMapTypeChange = (mapTypeValue: string | MapTypes) => {
@@ -234,34 +229,135 @@ export default function MapPage() {
 
     if (processedData.years) {
       // Convert years object to arrays if needed
-      let yearsData: Record<string, number> | number[][] | null = processedData.years;
+      let yearsData: Record<string, number | number[]> | (number | null)[][] | null = processedData.years;
       
       // If years is an object (not already an array of arrays), convert it
       if (yearsData && typeof yearsData === 'object' && !Array.isArray(yearsData)) {
         // Extract years and sort them
-        const yearKeys = Object.keys(yearsData).filter(k => !isNaN(Number(k))).map(Number).sort((a, b) => a - b);
+        let yearKeys = Object.keys(yearsData).filter(k => !isNaN(Number(k))).map(Number).sort((a, b) => a - b);
+        
+        // Filter years based on custom range or selected period
+        if (customYearRange) {
+          yearKeys = yearKeys.filter(year => year >= customYearRange[0] && year <= customYearRange[1]);
+        } else if (periodScenarioSelected) {
+          const periodRange = getPeriodYearRange(periodScenarioSelected.name);
+          if (periodRange) {
+            yearKeys = yearKeys.filter(year => year >= periodRange[0] && year <= periodRange[1]);
+          }
+        }
         
         // Convert to arrays: [mean_array, min_array, max_array]
-        // For SST and similar indicators, we only have mean values per year
-        const yearsObj = yearsData as Record<string, number>;
-        const meanValues = yearKeys.map(year => yearsObj[year.toString()] || 0);
+        // Check if years object contains arrays [mean, min, max] or just single values
+        const yearsObj = yearsData as Record<string, number | number[]>;
+        const firstYearValue = yearsObj[yearKeys[0]?.toString()];
+        const isArrayFormat = Array.isArray(firstYearValue) && firstYearValue.length >= 3;
         
-        // For indicators with min/max, we'd need those values per year
-        // For now, check if we have min/max in the zone data
-        const zoneDataKey = Object.keys(processedData).find(k => k !== 'years' && k !== 'chart');
-        const zoneData = zoneDataKey ? processedData[zoneDataKey] : null;
-        const hasMinMax = zoneData && (zoneData.min !== null || zoneData.max !== null);
+        console.log('Raw years data structure:', {
+          firstYearKey: yearKeys[0],
+          firstYearValue,
+          firstYearValueType: typeof firstYearValue,
+          isArray: Array.isArray(firstYearValue),
+          isArrayFormat,
+          sampleYears: yearKeys.slice(0, 3).map(y => ({
+            year: y,
+            value: yearsObj[y.toString()],
+            valueType: typeof yearsObj[y.toString()],
+            isArray: Array.isArray(yearsObj[y.toString()]),
+          })),
+        });
         
-        // Create min/max arrays - if we have min/max values, use them (but years object only has mean)
-        // For now, we'll use empty arrays for min/max since years object only contains mean values
-        const minValues = hasMinMax ? Array(yearKeys.length).fill(null) : [];
-        const maxValues = hasMinMax ? Array(yearKeys.length).fill(null) : [];
+        let meanValues: number[] = [];
+        let minValues: (number | null)[] = [];
+        let maxValues: (number | null)[] = [];
         
-        yearsData = [meanValues, minValues, maxValues];
+        if (isArrayFormat) {
+          // Years object contains arrays: {1950: [mean, min, max], 1951: [mean, min, max], ...}
+          meanValues = yearKeys.map(year => {
+            const yearData = yearsObj[year.toString()] as number[];
+            return Array.isArray(yearData) && yearData.length >= 1 ? yearData[0] : 0;
+          });
+          minValues = yearKeys.map(year => {
+            const yearData = yearsObj[year.toString()] as number[];
+            return Array.isArray(yearData) && yearData.length >= 2 ? yearData[1] : null;
+          });
+          maxValues = yearKeys.map(year => {
+            const yearData = yearsObj[year.toString()] as number[];
+            return Array.isArray(yearData) && yearData.length >= 3 ? yearData[2] : null;
+          });
+          
+          console.log('Extracted from array format:', {
+            firstYear: yearKeys[0],
+            firstYearRaw: yearsObj[yearKeys[0].toString()],
+            firstMean: meanValues[0],
+            firstMin: minValues[0],
+            firstMax: maxValues[0],
+            allSame: meanValues[0] === minValues[0] && minValues[0] === maxValues[0],
+          });
+        } else {
+          // Years object contains single values: {1950: mean, 1951: mean, ...}
+          meanValues = yearKeys.map(year => {
+            const value = yearsObj[year.toString()];
+            return typeof value === 'number' ? value : 0;
+          });
+          // For single-value indicators, no min/max per year
+          minValues = [];
+          maxValues = [];
+        }
+        
+        yearsData = [meanValues, minValues, maxValues] as (number | null)[][];
+        console.log('Years data extracted (object format):', {
+          isArrayFormat,
+          meanLength: meanValues.length,
+          minLength: minValues.length,
+          maxLength: maxValues.length,
+          hasMin: minValues.some(v => v !== null),
+          hasMax: maxValues.some(v => v !== null),
+          firstYearValue,
+          sampleMin: minValues.slice(0, 5),
+          sampleMax: maxValues.slice(0, 5),
+          sampleMean: meanValues.slice(0, 5),
+        });
         setChartLabels(yearKeys.map(y => y.toString()));
       } else if (Array.isArray(yearsData) && yearsData.length >= 3) {
         // Already in array format [mean, min, max]
-        setChartLabels(yearsData[0]?.map((_: any, i: number) => (1950 + i).toString()) || []);
+        // Filter by period if needed
+        let filteredData = yearsData;
+        let filteredLabels: string[] = [];
+        
+        // Use custom year range if available, otherwise use period range
+        if (customYearRange) {
+          // Assuming years start from 1950 (index 0 = 1950)
+          const startIndex = Math.max(0, customYearRange[0] - 1950);
+          const endIndex = Math.min(yearsData[0].length - 1, customYearRange[1] - 1950);
+          
+          filteredData = [
+            yearsData[0].slice(startIndex, endIndex + 1),
+            yearsData[1]?.slice(startIndex, endIndex + 1) || [],
+            yearsData[2]?.slice(startIndex, endIndex + 1) || []
+          ];
+          filteredLabels = Array.from({ length: endIndex - startIndex + 1 }, (_, i) => (1950 + startIndex + i).toString());
+        } else if (periodScenarioSelected) {
+          const periodRange = getPeriodYearRange(periodScenarioSelected.name);
+          if (periodRange) {
+            // Assuming years start from 1950 (index 0 = 1950)
+            const startIndex = Math.max(0, periodRange[0] - 1950);
+            const endIndex = Math.min(yearsData[0].length - 1, periodRange[1] - 1950);
+            
+            filteredData = [
+              yearsData[0].slice(startIndex, endIndex + 1),
+              yearsData[1]?.slice(startIndex, endIndex + 1) || [],
+              yearsData[2]?.slice(startIndex, endIndex + 1) || []
+            ];
+            filteredLabels = Array.from({ length: endIndex - startIndex + 1 }, (_, i) => (1950 + startIndex + i).toString());
+          } else {
+            filteredLabels = yearsData[0]?.map((_: any, i: number) => (1950 + i).toString()) || [];
+          }
+        } else {
+          filteredLabels = yearsData[0]?.map((_: any, i: number) => (1950 + i).toString()) || [];
+        }
+        
+        yearsData = filteredData;
+        setChartLabels(filteredLabels);
       } else {
         yearsData = null;
       }
@@ -306,6 +402,93 @@ export default function MapPage() {
     setShowSideBar(true);
     setHidden(false);
   };
+  
+  // Re-filter chart data when period or custom year range changes
+  useEffect(() => {
+    if (data && data.years && showChart) {
+      // Re-process the chart data with the new period filter
+      const processedData: Record<string, any> = { ...data };
+      if (processedData.years) {
+        let yearsData: Record<string, number | number[]> | (number | null)[][] | null = processedData.years;
+        
+        if (yearsData && typeof yearsData === 'object' && !Array.isArray(yearsData)) {
+          let yearKeys = Object.keys(yearsData).filter(k => !isNaN(Number(k))).map(Number).sort((a, b) => a - b);
+          
+          // Use custom year range if available, otherwise use period range
+          if (customYearRange) {
+            yearKeys = yearKeys.filter(year => year >= customYearRange[0] && year <= customYearRange[1]);
+          } else if (periodScenarioSelected) {
+            const periodRange = getPeriodYearRange(periodScenarioSelected.name);
+            if (periodRange) {
+              yearKeys = yearKeys.filter(year => year >= periodRange[0] && year <= periodRange[1]);
+            }
+          }
+          
+          // Check if years object contains arrays [mean, min, max] or just single values
+          const yearsObj = yearsData as Record<string, number | number[]>;
+          const firstYearValue = yearsObj[yearKeys[0]?.toString()];
+          const isArrayFormat = Array.isArray(firstYearValue) && firstYearValue.length >= 3;
+          
+          let meanValues: number[] = [];
+          let minValues: (number | null)[] = [];
+          let maxValues: (number | null)[] = [];
+          
+          if (isArrayFormat) {
+            // Years object contains arrays: {1950: [mean, min, max], 1951: [mean, min, max], ...}
+            meanValues = yearKeys.map(year => {
+              const yearData = yearsObj[year.toString()] as number[];
+              return Array.isArray(yearData) && yearData.length >= 1 ? yearData[0] : 0;
+            });
+            minValues = yearKeys.map(year => {
+              const yearData = yearsObj[year.toString()] as number[];
+              return Array.isArray(yearData) && yearData.length >= 2 ? yearData[1] : null;
+            });
+            maxValues = yearKeys.map(year => {
+              const yearData = yearsObj[year.toString()] as number[];
+              return Array.isArray(yearData) && yearData.length >= 3 ? yearData[2] : null;
+            });
+          } else {
+            // Years object contains single values: {1950: mean, 1951: mean, ...}
+            meanValues = yearKeys.map(year => {
+              const value = yearsObj[year.toString()];
+              return typeof value === 'number' ? value : 0;
+            });
+            // For single-value indicators, no min/max per year
+            minValues = [];
+            maxValues = [];
+          }
+          
+          setChartLabels(yearKeys.map(y => y.toString()));
+          setChartData({
+            labels: yearKeys.map(y => y.toString()),
+            datasets: [
+              {
+                label: 'Mean',
+                fill: false,
+                data: meanValues,
+                borderColor: colors ? colors[2] : '#000',
+                backgroundColor: colors ? colors[2] : '#000',
+              },
+              {
+                label: 'Min',
+                fill: '-1',
+                data: minValues,
+                borderColor: colors ? colors[0] : '#000',
+                backgroundColor: colors ? colors[0] : '#000',
+              },
+              {
+                label: 'Max',
+                fill: '-2',
+                data: maxValues,
+                borderColor: colors ? colors[colors.length - 1] : '#000',
+                backgroundColor: colors ? colors[colors.length - 1] : '#000',
+              }
+            ]
+          });
+        }
+      }
+    }
+  }, [periodScenarioSelected, customYearRange, data, showChart, colors]);
 
   const clickHyperlink = () => {
     if (!data) return;
@@ -319,69 +502,6 @@ export default function MapPage() {
     }
     baseUrl += '?chart=catch-chart&dimension=taxon&measure=tonnage&limit=10';
     window.open(baseUrl, '_blank');
-  };
-
-
-  const chartOptions = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      tooltip: {
-        callbacks: {
-          label: (context: any) => {
-            let label = context.dataset.label || '';
-            if (label) label += ': ';
-            if (context.parsed.y !== null) {
-              label += context.parsed.y.toFixed(2);
-            }
-            return label;
-          }
-        }
-      },
-      legend: {
-        labels: {
-          color: 'white'
-        }
-      }
-    },
-    elements: {
-      point: {
-        hitRadius: 5,
-        radius: 0
-      },
-      line: {
-        tension: 0,
-        borderWidth: 2
-      }
-    },
-    scales: {
-      x: {
-        ticks: {
-          autoSkip: true,
-          maxTicksLimit: 10,
-          color: 'white',
-          font: { size: 12 },
-          maxRotation: 45,
-          minRotation: 0,
-          callback: (value: any, index: number) => {
-            const label = chartLabels[index];
-            return label === '' ? '' : label;
-          }
-        }
-      },
-      y: {
-        ticks: {
-          color: 'white',
-          font: { size: 12 },
-          callback: (value: any, index: number, ticks: any) => {
-            if (index === 0 || index === ticks.length - 1) {
-              return '';
-            }
-            return Number(value).toFixed(1);
-          }
-        }
-      }
-    }
   };
 
   if (!climateIndicatorSelected || !climateScenarioSelected || !periodScenarioSelected) {
@@ -412,6 +532,8 @@ export default function MapPage() {
         methodId={methodId}
         collapsed={sidebarCollapsed}
         onToggleCollapse={() => setSidebarCollapsed(!sidebarCollapsed)}
+        onRangeChange={setCustomRange}
+        onYearRangeChange={setCustomYearRange}
       />
 
       {/* Map Container - Full Screen, accounting for left sidebar */}
@@ -424,6 +546,7 @@ export default function MapPage() {
           periodScenario={periodScenarioSelected}
           onZoneClicked={onZoneClicked}
           onLoadingChange={setIsLoading}
+          customRange={customRange}
         />
       </div>
 
@@ -446,7 +569,6 @@ export default function MapPage() {
         showChart={showChart}
         chartLabels={chartLabels}
         chartData={chartData}
-        chartOptions={chartOptions}
         onHyperlinkClick={clickHyperlink}
       />
 

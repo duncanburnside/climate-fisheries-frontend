@@ -37,7 +37,7 @@ export function NavbarWrapper() {
 
   return (
     <Navbar 
-      title="Climate-Fisheries" 
+      title="ClimateFisheries.org" 
       indicatorLabel={isMapPage ? (indicatorLabel || undefined) : undefined}
       navLinks={standardNavLinks}
       showMapButton={showStandardNavbar}

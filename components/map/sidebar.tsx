@@ -3,7 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { MapTypes } from '@/lib/models/MapTypes';
 import type { ClimateIndicator, ChartData } from '@/lib/models/ClimateTypes';
-import { Line } from 'react-chartjs-2';
+import ZoneChart from './zone-chart';
 
 interface SidebarProps {
   showSideBar: boolean;
@@ -16,7 +16,6 @@ interface SidebarProps {
   showChart: boolean;
   chartLabels: string[];
   chartData: ChartData;
-  chartOptions: any;
   onHyperlinkClick: () => void;
 }
 
@@ -31,7 +30,6 @@ export default function Sidebar({
   showChart,
   chartLabels,
   chartData,
-  chartOptions,
   onHyperlinkClick,
 }: SidebarProps) {
   if (!showSideBar) return null;
@@ -126,9 +124,11 @@ export default function Sidebar({
           {showChart && (
             <>
               <hr className="border-white my-4" />
-              <div className="h-64">
-                <Line data={{ labels: chartLabels, datasets: chartData.datasets }} options={chartOptions} />
-              </div>
+              <ZoneChart
+                chartLabels={chartLabels}
+                chartData={chartData}
+                climateIndicator={climateIndicator}
+              />
             </>
           )}
         </div>

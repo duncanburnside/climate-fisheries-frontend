@@ -13,6 +13,7 @@ interface MapContainerProps {
   periodScenario: any;
   onZoneClicked: (data: any) => void;
   onLoadingChange?: (loading: boolean) => void;
+  customRange?: { start: string; end: string; startOpacity: number; endOpacity: number } | null;
 }
 
 export interface MapContainerHandle {
@@ -27,7 +28,8 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
   climateScenario,
   periodScenario,
   onZoneClicked,
-  onLoadingChange
+  onLoadingChange,
+  customRange
 }, ref) {
   const mapRef = useRef<HTMLDivElement>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -126,7 +128,7 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
     if (mapType === MapTypes.Grid && climateIndicator.id !== 'revenue') {
       const existingImage = backgroundRef.current.select('image');
       if (existingImage.empty()) {
-        drawBackground();
+        drawBackground(customRange || undefined);
       }
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -139,7 +141,7 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
           if (mapType === MapTypes.Grid && climateIndicator.id !== 'revenue') {
             backgroundRef.current.selectAll('image').remove();
             backgroundRef.current.selectAll('rect').remove();
-            drawBackground();
+            drawBackground(customRange || undefined);
           }
         }
       }, 300);
@@ -155,7 +157,7 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
         if (climateIndicator.id !== 'revenue') {
           backgroundRef.current.selectAll('image').remove();
           backgroundRef.current.selectAll('rect').remove();
-          drawBackground();
+          drawBackground(customRange || undefined);
         }
         drawCountries();
         drawAntarctica();
@@ -164,7 +166,7 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
             backgroundRef.current.selectAll('image').remove();
             backgroundRef.current.selectAll('rect').remove();
           }
-          drawBackground();
+          drawBackground(customRange || undefined);
         }
       } else {
         drawZones();
@@ -387,34 +389,125 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
     }
   };
 
-  const drawBackground = () => {
+  const drawBackground = (customRange?: { start: string; end: string; startOpacity: number; endOpacity: number }) => {
     if (!backgroundRef.current || !projectionRef.current) return;
 
-    backgroundRef.current.selectAll('image').remove();
     backgroundRef.current.selectAll('rect').remove();
 
     if (climateIndicator.id !== 'revenue' && imageColorbarRef.current) {
-      const imageUrl = `/assets/images/indicators/${climateIndicator.name}/${climateScenario.name}/${periodScenario.name}.png`;
-      
-      console.log('Loading PNG image:', imageUrl);
-
       const imageX = 0;
       const imageY = windowHeight / 2 - height / 2;
       const imageWidth = windowWidth;
       const imageHeight = height;
 
-      backgroundRef.current
-        .append('image')
-        .style('cursor', 'pointer')
-        .attr('href', imageUrl)
-        .attr('width', imageWidth)
-        .attr('height', imageHeight)
-        .attr('x', imageX)
-        .attr('y', imageY)
-        .attr('preserveAspectRatio', 'none')
-        .on('click', (event: any, d: any) => {
-          handleClick(event, d);
-        });
+      // If custom range is provided, blend multiple PNGs
+      if (customRange && mapType === MapTypes.Grid) {
+        // Get existing images
+        const existingImages = backgroundRef.current.selectAll('image');
+        
+        // Add start period image at full opacity
+        const startImageUrl = `/assets/images/indicators/${climateIndicator.name}/${climateScenario.name}/${customRange.start}.png`;
+        const startImage = backgroundRef.current
+          .append('image')
+          .style('cursor', 'pointer')
+          .style('opacity', 0)
+          .attr('href', startImageUrl)
+          .attr('width', imageWidth)
+          .attr('height', imageHeight)
+          .attr('x', imageX)
+          .attr('y', imageY)
+          .attr('preserveAspectRatio', 'none')
+          .on('click', (event: any, d: any) => {
+            handleClick(event, d);
+          });
+
+        // Add end period image at specified opacity
+        const endImageUrl = `/assets/images/indicators/${climateIndicator.name}/${climateScenario.name}/${customRange.end}.png`;
+        const endImage = backgroundRef.current
+          .append('image')
+          .style('cursor', 'pointer')
+          .style('opacity', 0)
+          .attr('href', endImageUrl)
+          .attr('width', imageWidth)
+          .attr('height', imageHeight)
+          .attr('x', imageX)
+          .attr('y', imageY)
+          .attr('preserveAspectRatio', 'none')
+          .on('click', (event: any, d: any) => {
+            handleClick(event, d);
+          });
+
+        // Fade out old images while fading in new ones (cross-fade)
+        existingImages
+          .transition()
+          .duration(1000)
+          .style('opacity', 0)
+          .remove();
+
+        // Fade in both images
+        startImage
+          .transition()
+          .duration(1000)
+          .style('opacity', customRange.startOpacity);
+        
+        endImage
+          .transition()
+          .duration(1000)
+          .style('opacity', customRange.endOpacity);
+      } else {
+        // Single image mode - cross-fade transition for Grid map type
+        const imageUrl = `/assets/images/indicators/${climateIndicator.name}/${climateScenario.name}/${periodScenario.name}.png`;
+        console.log('Loading PNG image:', imageUrl);
+
+        if (mapType === MapTypes.Grid) {
+          // Get existing images for cross-fade
+          const existingImages = backgroundRef.current.selectAll('image');
+          
+          // Add new image behind existing ones (so it appears on top after fade)
+          const newImage = backgroundRef.current
+            .insert('image', ':first-child') // Insert at the beginning so it's behind
+            .style('cursor', 'pointer')
+            .style('opacity', 0)
+            .attr('href', imageUrl)
+            .attr('width', imageWidth)
+            .attr('height', imageHeight)
+            .attr('x', imageX)
+            .attr('y', imageY)
+            .attr('preserveAspectRatio', 'none')
+            .on('click', (event: any, d: any) => {
+              handleClick(event, d);
+            });
+
+          // Cross-fade: fade out old images while fading in new one
+          existingImages
+            .transition()
+            .duration(1000)
+            .style('opacity', 0)
+            .remove();
+
+          newImage
+            .transition()
+            .duration(1000)
+            .style('opacity', 1);
+        } else {
+          // For non-Grid maps, just replace immediately
+          backgroundRef.current.selectAll('image').remove();
+          
+          const newImage = backgroundRef.current
+            .append('image')
+            .style('cursor', 'pointer')
+            .style('opacity', 1)
+            .attr('href', imageUrl)
+            .attr('width', imageWidth)
+            .attr('height', imageHeight)
+            .attr('x', imageX)
+            .attr('y', imageY)
+            .attr('preserveAspectRatio', 'none')
+            .on('click', (event: any, d: any) => {
+              handleClick(event, d);
+            });
+        }
+      }
 
       if (imageColorbarRef.current[climateIndicator.name]) {
         const colorbar = imageColorbarRef.current[climateIndicator.name];
@@ -988,13 +1081,13 @@ const MapContainerComponent = forwardRef<MapContainerHandle, MapContainerProps>(
       if (backgroundRef.current && projectionRef.current) {
         backgroundRef.current.selectAll('image').remove();
         backgroundRef.current.selectAll('rect').remove();
-        drawBackground();
+        drawBackground(customRange || undefined);
       } else {
         setTimeout(() => {
           if (backgroundRef.current && projectionRef.current) {
             backgroundRef.current.selectAll('image').remove();
             backgroundRef.current.selectAll('rect').remove();
-            drawBackground();
+            drawBackground(customRange || undefined);
           }
         }, 100);
       }
