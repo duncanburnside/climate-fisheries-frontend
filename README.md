@@ -1,4 +1,4 @@
-# Climate-Fisheries - Next.js Application
+# Climate-Fisheries - Next.js (2025)
 
 This is a Next.js rebuild of the Climate-Fisheries application, migrated from Angular 16 to Next.js 16 with TypeScript and Tailwind CSS.
 
